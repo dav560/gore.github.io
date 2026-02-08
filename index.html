@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Project</title>
+
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --bg-soft: #151515;
+      --text: #eaeaea;
+      --muted: #9a9a9a;
+      --accent: #7c7cff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+
+    header a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: var(--bg-soft);
+      padding: 1.5rem;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #222;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1>My Personal Project</h1>
+      <p>
+        A minimal dark-themed website built to experiment, learn,
+        and create something meaningful.
+      </p>
+      <a href="#about">Discover more</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>
+      This project is a personal space to explore ideas, test concepts,
+      and build things without constraints. Clean design, focused content,
+      and full creative freedom.
+    </p>
+  </section>
+
+  <section>
+    <h2>What I’m Working On</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Experiments</h3>
+        <p>Trying new layouts, interactions, and visual ideas.</p>
+      </div>
+      <div class="card">
+        <h3>Learning</h3>
+        <p>Improving my skills through hands-on projects.</p>
+      </div>
+      <div class="card">
+        <h3>Ideas</h3>
+        <p>A place to turn random thoughts into real things.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 — Personal Project
+  </footer>
+
+</body>
+</html>
